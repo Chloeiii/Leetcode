@@ -13,4 +13,13 @@
     
     
     &&java&&
-    
+    public class Solution {
+        public int arrayPairSum(int[] nums) {
+            int sum=0;
+            Arrays.sort(nums);
+            for(int t=0; t<nums.length; t+=2){
+                sum+=nums[t];
+            }
+            return sum;
+        }
+    }
