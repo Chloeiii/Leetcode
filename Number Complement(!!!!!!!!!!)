@@ -16,12 +16,17 @@
   Explanation: The binary representation of 1 is 1 (no leading zero bits), and its complement is 0. So you need to output 0.
   
   &&java&&
-  public class Solution {
-    public int findComplement(int num) {
-        int n = 0;
-        while (n < num) {
-            n = (n << 1)|1;
+  public int findComplement(int num) {
+        int result=0;
+        int index=0;
+        while(num!=0){
+            //get last digit and flip
+            int flipLastDigit = 1-num%2;
+            //put it at the right place
+            result+=flipLastDigit*Math.pow(2,index);
+            num=num>>1;
+            index++;
         }
-        return n - num;
+        return result;
+       
     }
-  }
