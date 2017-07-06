@@ -10,3 +10,39 @@ Output: ["Alaska", "Dad"]
 Note:
 You may use one character in the keyboard more than once.
 You may assume the input string will only contain letters of alphabet.
+
+
+&&java&&
+      public class Solution {
+          public String[] findWords(String[] words) {
+              int rowNumber;
+              List<String> result = new ArrayList<>();
+              String[] keyboard = {"QWERTYUIOP","ASDFGHJKL","ZXCVBNM"};
+
+              outer:
+              for(int i=0; i<words.length; i++){//for each words
+                  rowNumber = checkRowNum(words[i].charAt(0)); //count the rowNumber of the first character of the string
+
+                  for(int j=0; j< words[i].length(); j++){//for each characters    
+                      int rowNumber222 = checkRowNum(words[i].charAt(j));//check if each character has the same row number as the first one
+                      if(rowNumber222!=rowNumber){
+                          continue outer;//if not, break, and continue the outer loop
+                      }
+                  }
+                  result.add(words[i]);
+              }
+              return result.toArray(new String[0]);
+          }
+
+          private int checkRowNum(char c){
+              char upper = Character.toUpperCase(c);
+              String[] keyboard = {"QWERTYUIOP","ASDFGHJKL","ZXCVBNM"};
+              if(keyboard[0].indexOf(upper)>=0){
+                  return 0;
+              }else if(keyboard[1].indexOf(upper)>=0){
+                  return 1;
+              }else{
+                  return 2;
+              }
+          } 
+      }
