@@ -36,3 +36,33 @@ The given r and c are all positive.
 
 
 &&java&&
+
+public class Solution {
+    public int[][] matrixReshape(int[][] nums, int r, int c) {
+        //check if given parameters is possible to reshape
+        if(nums.length*nums[0].length != r*c){
+            return nums;
+        }
+        
+        int x=0;
+        int y=0;
+
+        int [][] result = new int [r][c];
+        for(int m = 0; m< r ; m++){
+            for(int n = 0; n< c; n++){
+                if(y>=nums[0].length){
+                    y=0;
+                    x++;
+                    result[m][n] = nums[x][y];
+                    y++;
+                }else{
+                    
+                    result[m][n] = nums[x][y];
+                    y++;
+                }
+                
+            }
+        }
+        return result;
+    }
+}
