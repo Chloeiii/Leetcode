@@ -17,3 +17,17 @@ The sister has two different kinds of candies, the brother has only one kind of 
 
 
 &&java&&
+
+
+
+
+
+&&note&&
+JAVA HASHSET CLASS
+
+Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.
+
+The important points about Java HashSet class are:
+
+1. HashSet stores the elements by using a mechanism called hashing.
+2. HashSet contains unique elements only.
