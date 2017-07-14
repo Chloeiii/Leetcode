@@ -1,5 +1,7 @@
 # daily-exercises
-Chloe's Daily Exercises!!!!!
+
+to be an active programmer
+(╯3╰)
 
 java
 code from leetcode
