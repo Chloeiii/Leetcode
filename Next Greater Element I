@@ -35,9 +35,7 @@ The length of both nums1 and nums2 would not exceed 1000.
                 int index = findIndex(findNums[i],nums);
                 if(index==nums.length-1){ //if the number in first array is the last one in the second array
                     result[pointer] = -1; 
-
                 }else{
-
                     for(int m = index+1; m<nums.length; m++ ){
                         if(nums[m] > findNums[i]){
                             result[pointer] =nums[m]; 
@@ -47,13 +45,12 @@ The length of both nums1 and nums2 would not exceed 1000.
                     if(result[pointer] == 0){
                         result[pointer] = -1; 
                     }
-
                 }                
-
                 pointer++;
             }
             return result;
         }
+
 
         public int findIndex(int a, int[] nums){ //find index in an array
             for(int n=0; n<nums.length; n++){
