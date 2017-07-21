@@ -15,5 +15,37 @@ The range of node's value is in the range of 32-bit signed integer.
 
 
 &&java&&
-
-....
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> result = new ArrayList<>();
+        Queue<TreeNode> nodes = new LinkedList<>();
+        
+        if(root == null){
+            return result;
+        }  
+        nodes.add(root);
+        while(!nodes.isEmpty()){
+            int n = nodes.size();
+            double sum = 0.0;
+            for(int i = 0; i < n; i++) {
+                TreeNode node = nodes.poll();
+                sum += node.val;
+                if(node.left != null) nodes.offer(node.left);
+                if(node.right != null) nodes.offer(node.right);
+             }
+             result.add(sum / n);
+        }
+        return result;
+        
+        
+    }
+}
