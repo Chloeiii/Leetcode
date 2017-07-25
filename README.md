@@ -105,3 +105,11 @@ ___
     ||(logical or)   A||B is true
     ! (logical not)  !(A&&B) is true
 ## [java math operators and math class](http://tutorials.jenkov.com/java/math-operators-and-math-class.html)
+    int abs1 = Math.abs(10);  // abs1 = 10 (absolute value)
+                Math.abs(int)
+                Math.abs(long)
+                Math.abs(float)
+                Math.abs(double)
+    int min = Math.min(10, 20);
+    int max = Math.max(10, 20);
+    double random = Math.random();
