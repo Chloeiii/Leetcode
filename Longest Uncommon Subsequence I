@@ -17,5 +17,9 @@ Only letters from a ~ z will appear in input strings.
 
 
 
-&&java&&
-
+&&java&& (this puzzle is hilarious)
+  public class Solution {
+      public int findLUSlength(String a, String b) {
+          return a.equals(b) ? -1: Math.max(a.length(), b.length());
+      }
+  }
