@@ -104,4 +104,4 @@ ___
     &&(logical and)  A&&B is false
     ||(logical or)   A||B is true
     ! (logical not)  !(A&&B) is true
-
+## [java math operators and math class](http://tutorials.jenkov.com/java/math-operators-and-math-class.html)
