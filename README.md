@@ -90,7 +90,7 @@ ___
 
     a&b = 0000 1100
     a|b = 0011 1101
-    a^b = 0011 0001
+    a^b = 0011 0001             0 ^ N = N        N ^ N = 0
     ~a  = 1100 0011
     <<(left shift)               a<<2 will give 1111 0000
     >>(right shift)              a>>2 will give      1111
