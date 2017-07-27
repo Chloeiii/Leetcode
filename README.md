@@ -45,6 +45,9 @@ ___
 
         String s
         char[] arr = s.toCharArray();
+        
+        System.out.println(Character.isUpperCase('c'));
+        false
 
 ## hashmap
      Map<Integer, Integer> map = new HashMap<Integer, Integer>();
