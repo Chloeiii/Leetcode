@@ -15,3 +15,18 @@ Output:
 
 
 &&java&&
+public class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> list = new ArrayList<Integer>();
+        int[] arr = new int[nums.length+1];//to store the count of each int
+        for(int i=0; i<nums.length; i++){
+            arr[nums[i]]++;
+        }
+        for(int n=1 ; n<arr.length; n++){
+            if(arr[n]==0){
+                list.add(n);
+            }
+        }
+        return list;
+    }
+}
