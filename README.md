@@ -48,6 +48,7 @@ ___
         
         System.out.println(Character.isUpperCase('c'));
         false
+     List<Integer> list = new ArrayList<Integer>();
 
 ## hashmap
      Map<Integer, Integer> map = new HashMap<Integer, Integer>();
