@@ -16,3 +16,22 @@ e
 
 Explanation:
 'e' is the letter that was added.
+
+
+
+
+&&java&&
+public class Solution {
+    public char findTheDifference(String s, String t) {
+        // Initialize int variables to store sum of ASCII codes for each string
+        int sCode = 0;
+        int tCode = 0;
+        for(int i=0; i<s.length(); i++){
+            sCode+=(int)s.charAt(i);
+        }
+        for(int j=0; j<t.length(); j++){
+            tCode+=(int)t.charAt(j);
+        }
+        return (char)(tCode-sCode);
+    }
+}
