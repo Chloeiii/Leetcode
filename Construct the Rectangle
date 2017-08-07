@@ -18,3 +18,23 @@ The web page's width and length you designed must be positive integers.
 
 
 &&java&&
+public class Solution {
+    public int[] constructRectangle(int area) {
+        int[] result = new int[2];
+        int w = (int)Math.sqrt(area);
+        while(area%w!=0){
+            w--;
+        }
+        result[0] = area/w;
+        result[1] = w;
+        return result;
+    }
+}
+
+---
+simplified code:
+public int[] constructRectangle(int area) {
+        int w = (int)Math.sqrt(area);
+      	while (area%w!=0) w--;
+      	return new int[]{area/w, w};
+}
