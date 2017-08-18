@@ -18,3 +18,33 @@ The minimum absolute difference is 1, which is the difference between 2 and 1 (o
 Note: There are at least two nodes in this BST.
 
 &&java&&
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    int min=Integer.MAX_VALUE;
+    TreeNode pre = null;
+    public int getMinimumDifference(TreeNode root) {
+        //since this is a bst, so inorder traversal of nodes results in a list of sorted nodes
+        /*
+        Check if the current node is empty / null.
+        Traverse the left subtree by recursively calling the in-order function.
+        Display the data part of the root (or current node).
+        Traverse the right subtree by recursively calling the in-order function.
+        */
+        if (root==null) return min;
+        getMinimumDifference(root.left);
+        if(pre!=null){
+            min = Math.min(min, root.val-pre.val);
+        }
+        pre=root;
+        getMinimumDifference(root.right);
+        return min;
+    }
+}
