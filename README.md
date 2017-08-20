@@ -4,7 +4,9 @@ to be an active programmer
 (╯3╰)
 
 ___
-
+## hiahiahia
+    Integer.bitCount(m);
+    
 ## BFS
     List<Double> result = new ArrayList<>();
     Queue<TreeNode> nodes = new LinkedList<>();
@@ -35,19 +37,26 @@ ___
 
     UNIQUE ELEMENTS!!!!!!!!!!!!!!!!!!!!!!!
 
-## others
+## String && Char
     String.valueOf(i)
-    Integer.bitCount(m);
     String[] keyboard = {"QWERTYUIOP","ASDFGHJKL","ZXCVBNM"};
-
-        String result ="";
-        String[] parts = s.split(" ");
-
-        String s
-        char[] arr = s.toCharArray();
+    
+    String s
+    String[] parts = s.split(" ");
+    
+    char[] arr = s.toCharArray();
+    
+    System.out.println(Character.isUpperCase('c'));
+    false
         
-        System.out.println(Character.isUpperCase('c'));
-        false
+    String s;    
+    int index=s.indexOf('a');
+    
+    //delete a char in a string
+    String s;
+    s = s.substring(0, index) + s.substring(index + 1);
+
+## construct an array list             
      List<Integer> list = new ArrayList<Integer>();
 
 ## hashmap
@@ -117,7 +126,7 @@ ___
     int min = Math.min(10, 20);
     int max = Math.max(10, 20);
     double random = Math.random();
-## depth-first search
+## DFS
     pre-order traversal 
         Check if the current node is empty / null.
         Display the data part of the root (or current node).
