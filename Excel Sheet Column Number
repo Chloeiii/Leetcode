@@ -11,3 +11,12 @@ For example:
     Z -> 26
     AA -> 27
     AB -> 28 
+
+
+
+&&java&&
+class Solution {
+    public int titleToNumber(String s) {
+        
+    }
+}
