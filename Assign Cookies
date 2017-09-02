@@ -23,3 +23,16 @@ You need to output 2.
 
 
 &&java&&
+class Solution {
+    public int findContentChildren(int[] g, int[] s) {   
+        Arrays.sort(g);
+        Arrays.sort(s);
+        int m = 0;
+        for(int i=0; m<g.length&& i<s.length; i++){
+            if(g[m]<=s[i]){
+                m++;
+            }
+        }
+        return m;
+    }
+}
