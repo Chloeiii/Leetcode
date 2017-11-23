@@ -1,7 +1,8 @@
 # daily-exercises
 
-to be an active programmer  
+to be a ninja programmer  
 (╯3╰)
+:eyeglasses:
 
 ___
 ## hiahiahia
