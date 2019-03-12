@@ -1,14 +1,10 @@
-# daily-exercises
+# Java notes :relaxed:
 
-to be a ninja programmer  
-(╯3╰)
-:eyeglasses:
+[BFS](#bfs)  
 
-___
-## hiahiahia
-    Integer.bitCount(m);
-    
-## BFS
+
+___ 
+### BFS
     List<Double> result = new ArrayList<>();
     Queue<TreeNode> nodes = new LinkedList<>();
 
@@ -16,15 +12,77 @@ ___
     while(!nodes.isEmpty())
     int n = nodes.size();
 
-
     if(node.left != null) nodes.offer(node.left);
-    if(node.right != null) nodes.offer(node.right);
+    if(node.right != null) nodes.offer(node.right);
+    
 
-## SORT
+### DFS
+    pre-order traversal 
+        Check if the current node is empty / null.
+        Display the data part of the root (or current node).
+        Traverse the left subtree by recursively calling the pre-order function.
+        Traverse the right subtree by recursively calling the pre-order function.
+
+    in-order traversal
+        Check if the current node is empty / null.
+        Traverse the left subtree by recursively calling the in-order function.
+        Display the data part of the root (or current node).
+        Traverse the right subtree by recursively calling the in-order function.
+
+    post-order traversal
+        Check if the current node is empty / null.
+        Traverse the left subtree by recursively calling the post-order function.
+        Traverse the right subtree by recursively calling the post-order function.
+        Display the data part of the root (or current node).
+        
+### SORT
     int[] nums
     Arrays.sort(nums);
 
-## hashset
+### HashMap
+
+    A HashMap store items in "key/value" pairs, and you can access them by a key (e.g. a String). 
+    (有点像python的dictionary)
+
+    Create HashMap Obj:
+        import java.util.HashMap; // import the HashMap class
+        HashMap<String, String> xxx = new HashMap<String, String>();
+        HashMap<String, Integer> xxx= new HashMap<String, Integer>();
+
+    Add keys and values:
+        xxx.put("England", "London");
+
+    Access an Item:
+        xxx.get("England");
+
+    Remove an Item:
+        xxx.remove("England");
+
+    Remove all items:
+        xxx.clear();
+
+    Hashmap Size:
+        xxx.size();
+
+    Loop through a HashMap:
+        for (String i : xxx.keySet()) {
+          System.out.println(i);
+        }
+        for (String i : xxx.values()) {
+          System.out.println(i);
+        }
+        for (String i : xxx.keySet()) {
+          System.out.println("key: " + i + " value: " + xxx.get(i));
+        }
+    
+    An example:
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        if (map.containsKey(target - nums[i])) { 
+            result[0] = map.get(target - nums[i]);
+        }
+
+     
+### HashSet
      HashSet<Integer> set = new HashSet<Integer>();
 
 
@@ -38,7 +96,7 @@ ___
 
     UNIQUE ELEMENTS!!!!!!!!!!!!!!!!!!!!!!!
 
-## String && Char
+### String && Char
     String.valueOf(i)
     String[] keyboard = {"QWERTYUIOP","ASDFGHJKL","ZXCVBNM"};
     
@@ -57,23 +115,19 @@ ___
     String s;
     s = s.substring(0, index) + s.substring(index + 1);
 
-## construct an array list             
+###  Array list             
      List<Integer> list = new ArrayList<Integer>();
 
-## hashmap
-     Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-     if (map.containsKey(target - nums[i])) { 
-     result[0] = map.get(target - nums[i]);
-     
 
-## [Priority Queue](https://www.javatpoint.com/java-priorityqueue)
+
+### Priority Queue
+    https://www.javatpoint.com/java-priorityqueue
 
 
 
 
-## [java basic operators](https://www.tutorialspoint.com/java/java_basic_operators.htm)
-
-
+### basic operators
+    https://www.tutorialspoint.com/java/java_basic_operators.htm
 
     **Assume integer variable A holds 10 and variable B holds 20
 
@@ -92,8 +146,6 @@ ___
     <(less than)        A<B is true
     >=(greater than or equal to)
     <=(less than or equal to)
-
-
 
     =====================================================================
     the bitwise operators
@@ -118,7 +170,10 @@ ___
     &&(logical and)  A&&B is false
     ||(logical or)   A||B is true
     ! (logical not)  !(A&&B) is true
-## [java math operators and math class](http://tutorials.jenkov.com/java/math-operators-and-math-class.html)
+    
+### math operators
+
+    http://tutorials.jenkov.com/java/math-operators-and-math-class.html
     int abs1 = Math.abs(10);  // abs1 = 10 (absolute value)
                 Math.abs(int)
                 Math.abs(long)
@@ -127,21 +182,4 @@ ___
     int min = Math.min(10, 20);
     int max = Math.max(10, 20);
     double random = Math.random();
-## DFS
-    pre-order traversal 
-        Check if the current node is empty / null.
-        Display the data part of the root (or current node).
-        Traverse the left subtree by recursively calling the pre-order function.
-        Traverse the right subtree by recursively calling the pre-order function.
 
-    in-order traversal
-        Check if the current node is empty / null.
-        Traverse the left subtree by recursively calling the in-order function.
-        Display the data part of the root (or current node).
-        Traverse the right subtree by recursively calling the in-order function.
-
-    post-order traversal
-        Check if the current node is empty / null.
-        Traverse the left subtree by recursively calling the post-order function.
-        Traverse the right subtree by recursively calling the post-order function.
-        Display the data part of the root (or current node).
