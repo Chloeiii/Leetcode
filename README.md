@@ -7,7 +7,7 @@
 - [HashMap](#hashmap)  
 - [HashSet](#hashset)  
 - [String and Char](#string--char)  
-- [ArrayList](#array-list)  
+- [ArrayList](#arraylist)  
 - [Priority Queue](#priority-queue)  
 - [Basic Operators](#basic-operators)  
 - [Math Operators](#math-operators)  
@@ -124,7 +124,7 @@ ___
     String s;
     s = s.substring(0, index) + s.substring(index + 1);
 
-###  Array list             
+###  ArrayList             
      List<Integer> list = new ArrayList<Integer>();
 
 
