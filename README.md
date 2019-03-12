@@ -1,7 +1,16 @@
 # Java notes :relaxed:
 
-[BFS](#bfs)  
-
+### Table of Contents
+- [BFS](#bfs)  
+- [DFS](#dfs)  
+- [sort](#sort)  
+- [HashMap](#hashmap)  
+- [HashSet](#hashset)  
+- [String and Char](#string--char)  
+- [ArrayList](#array-list)  
+- [Priority Queue](#priority-queue)  
+- [Basic Operators](#basic-operators)  
+- [Math Operators](#math-operators)  
 
 ___ 
 ### BFS
@@ -174,7 +183,7 @@ ___
 ### math operators
 
     http://tutorials.jenkov.com/java/math-operators-and-math-class.html
-    int abs1 = Math.abs(10);  // abs1 = 10 (absolute value)
+    int abs1 =  Math.abs(10);  // abs1 = 10 (absolute value)
                 Math.abs(int)
                 Math.abs(long)
                 Math.abs(float)
