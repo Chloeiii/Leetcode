@@ -192,3 +192,8 @@ ___
     int max = Math.max(10, 20);
     double random = Math.random();
 
+
+## TODO
+### Sorting algorithems
+### Binary Search Tree
+### olymorphism, inheritance, encapsulation, etc
