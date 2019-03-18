@@ -3,7 +3,6 @@
 ### Table of Contents
 - [BFS](#bfs)  
 - [DFS](#dfs)  
-- [sort](#sort)  
 - [HashMap](#hashmap)  
 - [HashSet](#hashset)  
 - [String and Char](#string--char)  
@@ -11,6 +10,7 @@
 - [Priority Queue](#priority-queue)  
 - [Basic Operators](#basic-operators)  
 - [Math Operators](#math-operators)  
+- [Sorting algorithems](#sorting-algorithems)
 
 ___ 
 ### BFS
@@ -43,10 +43,6 @@ ___
         Traverse the left subtree by recursively calling the post-order function.
         Traverse the right subtree by recursively calling the post-order function.
         Display the data part of the root (or current node).
-        
-### SORT
-    int[] nums
-    Arrays.sort(nums);
 
 ### HashMap
 
@@ -192,8 +188,21 @@ ___
     int max = Math.max(10, 20);
     double random = Math.random();
 
+### Sorting algorithems
+
+#### Arrays.sort in java
+    https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
+    e.g.
+        import java.util.Arrays; 
+        int[] nums
+        Arrays.sort(nums);
+#### Sorting algorithms
+    https://www.geeksforgeeks.org/sorting-algorithms/#algo
+
+#### Sorting algorithms time complexity
+    http://bigocheatsheet.com/
+
 
 ## TODO
-### Sorting algorithems
 ### Binary Search Tree
 ### olymorphism, inheritance, encapsulation, etc
