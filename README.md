@@ -120,10 +120,32 @@ ___
     String s;
     s = s.substring(0, index) + s.substring(index + 1);
 
-###  ArrayList             
-     List<Integer> list = new ArrayList<Integer>();
+###  ArrayList           
+    //the size can increase if collection grows or shrunk if objects are removed from the collection.
+    public static void main(String[] args) 
+                        throws IOException 
+    { 
+        int n = 5; 
+        ArrayList<Integer> arrli = new ArrayList<Integer>(n); 
+ 
+        for (int i=1; i<=n; i++) 
+            arrli.add(i); // Appending the new element at the end of the list 
+  
+        System.out.println(arrli); 
+        
+        arrli.remove(3); // Remove element at index 3 
 
+        System.out.println(arrli); 
 
+        for (int i=0; i<arrli.size(); i++) 
+            System.out.print(arrli.get(i)+" "); 
+    } 
+    
+    output:
+    [1, 2, 3, 4, 5]
+    [1, 2, 3, 5]
+    1 2 3 5 
+    
 
 ### Priority Queue
     https://www.javatpoint.com/java-priorityqueue
