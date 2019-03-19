@@ -12,6 +12,8 @@
 - [Math Operators](#math-operators)  
 - [Sorting algorithems](#sorting-algorithems)
 - [Balls into Bins problem](#balls-into-bins-problem)
+
+![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/java-collection.jpg)
 ___ 
 ### BFS
     List<Double> result = new ArrayList<>();
@@ -24,7 +26,7 @@ ___
     if(node.left != null) nodes.offer(node.left);
     if(node.right != null) nodes.offer(node.right);
     
-
+___ 
 ### DFS
     pre-order traversal 
         Check if the current node is empty / null.
@@ -43,7 +45,7 @@ ___
         Traverse the left subtree by recursively calling the post-order function.
         Traverse the right subtree by recursively calling the post-order function.
         Display the data part of the root (or current node).
-
+___ 
 ### HashMap
 
     A HashMap store items in "key/value" pairs, and you can access them by a key (e.g. a String). 
@@ -86,7 +88,7 @@ ___
             result[0] = map.get(target - nums[i]);
         }
 
-     
+___      
 ### HashSet
      HashSet<Integer> set = new HashSet<Integer>();
 
@@ -100,7 +102,7 @@ ___
     2. HashSet contains unique elements only.
 
     UNIQUE ELEMENTS!!!!!!!!!!!!!!!!!!!!!!!
-
+___ 
 ### String && Char
     String.valueOf(i)
     String[] keyboard = {"QWERTYUIOP","ASDFGHJKL","ZXCVBNM"};
@@ -119,7 +121,7 @@ ___
     //delete a char in a string
     String s;
     s = s.substring(0, index) + s.substring(index + 1);
-
+___ 
 ###  ArrayList           
     //the size can increase if collection grows or shrunk if objects are removed from the collection.
     public static void main(String[] args) 
@@ -146,13 +148,13 @@ ___
     [1, 2, 3, 5]
     1 2 3 5 
     
-
+___ 
 ### Priority Queue
     https://www.javatpoint.com/java-priorityqueue
 
 
 
-
+___ 
 ### basic operators
     https://www.tutorialspoint.com/java/java_basic_operators.htm
 
@@ -197,7 +199,7 @@ ___
     &&(logical and)  A&&B is false
     ||(logical or)   A||B is true
     ! (logical not)  !(A&&B) is true
-    
+___     
 ### math operators
 
     http://tutorials.jenkov.com/java/math-operators-and-math-class.html
@@ -209,7 +211,7 @@ ___
     int min = Math.min(10, 20);
     int max = Math.max(10, 20);
     double random = Math.random();
-
+___ 
 ### Sorting algorithems
 
 #### Arrays.sort in java
@@ -223,7 +225,7 @@ ___
 
 #### Sorting algorithms time complexity
     http://bigocheatsheet.com/
-
+___ 
 ### Balls into Bins problem
 
         Give m balls and n bins. Find out how many ways to assign balls to bins. Notice the buckets has no order. Like (1,2,3) and (3,2,1) are considered the same. 
@@ -240,7 +242,7 @@ ___
                     return assignBalls(m, n - 1) + assignBalls(m - n, n);
                 }
             }
-
+___ 
 ## TODO
 ### Binary Search Tree
 ### olymorphism, inheritance, encapsulation, etc
