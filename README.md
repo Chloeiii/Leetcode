@@ -1,50 +1,126 @@
 # Java notes :relaxed:
 
 ### Table of Contents
+- :see_no_evil:  
+- [ArrayList](#arraylist)  
+- [LinkedList](#linkedlist)
+- [Stack](#stack)
+- [Vector](#vector)
+- :hear_no_evil:  
+- [HashSet](#hashset)  
+- [LinkedHashSet](#linkedhashset)  
+- [TreeSet](#treeset) 
+:speak_no_evil:  
+- [Priority Queue](#priority-queue)  
+- [Array Deque](#arraydeque)  
+- [LinkedList DeQue](#linkedlist-deque)  
+- :baby:  
+- [HashMap](#hashmap)  
+- [HashLinkedMap](#hashlinkedmap)  
+- [HashTable](#hashtable)  
+- [TreeMap](#treemap)  
+- :angel:  
 - [BFS](#bfs)  
 - [DFS](#dfs)  
-- [HashMap](#hashmap)  
-- [HashSet](#hashset)  
 - [String and Char](#string--char)  
-- [ArrayList](#arraylist)  
-- [Priority Queue](#priority-queue)  
 - [Basic Operators](#basic-operators)  
 - [Math Operators](#math-operators)  
 - [Sorting algorithems](#sorting-algorithems)
 - [Balls into Bins problem](#balls-into-bins-problem)
 
 ![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/java-collection.jpg)
+<img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/java-collection.jpg" width="800" />
 ___ 
-### BFS
-    List<Double> result = new ArrayList<>();
-    Queue<TreeNode> nodes = new LinkedList<>();
+###  ArrayList           
+    //the size can increase if collection grows or shrunk if objects are removed from the collection.
+    public static void main(String[] args) 
+                        throws IOException 
+    { 
+        int n = 5; 
+        ArrayList<Integer> arrli = new ArrayList<Integer>(n); 
+ 
+        for (int i=1; i<=n; i++) 
+            arrli.add(i); // Appending the new element at the end of the list 
+  
+        System.out.println(arrli); 
+        
+        arrli.remove(3); // Remove element at index 3 
 
-    nodes.add(root);
-    while(!nodes.isEmpty())
-    int n = nodes.size();
+        System.out.println(arrli); 
 
-    if(node.left != null) nodes.offer(node.left);
-    if(node.right != null) nodes.offer(node.right);
+        for (int i=0; i<arrli.size(); i++) 
+            System.out.print(arrli.get(i)+" "); 
+    } 
     
+    output:
+    [1, 2, 3, 4, 5]
+    [1, 2, 3, 5]
+    1 2 3 5 
+
+___
+### LinkedList
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/gq/2013/03/Linkedlist.png" width="600" />
+
+    //Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at the contiguous location 
+    //LinkedList can be represented as a class and a Node as a separate class. 
+    class LinkedList { 
+	Node head; // head of list 
+
+	/* Linked list Node*/
+	class Node { 
+		int data; 
+		Node next; 
+
+		// Constructor to create a new node 
+		// Next is by default initialized 
+		// as null 
+		Node(int d) { data = d; next = null;} 
+	} 
+___
+### Stack
+
+    //TODO
+___
+### Vector
+
+    //TODO
+
+___      
+### HashSet
+   
+    // Java HashSet class is used to create a collection that uses a hash table for storage. 
+    // It inherits the AbstractSet class and implements Set interface.
+
+    // The important points about Java HashSet class are:
+    // 1. HashSet stores the elements by using a mechanism called hashing.
+    // 2. HashSet contains unique elements only.
+
+    // UNIQUE ELEMENTS!!!!!!!!!!!!!!!!!!!!!!!
+    HashSet<Integer> set = new HashSet<Integer>();
+    //TODO
+    
+___
+### LinkedHashSet
+
+    //TODO
+
+___
+### TreeSet
+
+    //TODO
+
 ___ 
-### DFS
-    pre-order traversal 
-        Check if the current node is empty / null.
-        Display the data part of the root (or current node).
-        Traverse the left subtree by recursively calling the pre-order function.
-        Traverse the right subtree by recursively calling the pre-order function.
+### Priority Queue
+    https://www.javatpoint.com/java-priorityqueue
 
-    in-order traversal
-        Check if the current node is empty / null.
-        Traverse the left subtree by recursively calling the in-order function.
-        Display the data part of the root (or current node).
-        Traverse the right subtree by recursively calling the in-order function.
+___
+### ArrayDeque
 
-    post-order traversal
-        Check if the current node is empty / null.
-        Traverse the left subtree by recursively calling the post-order function.
-        Traverse the right subtree by recursively calling the post-order function.
-        Display the data part of the root (or current node).
+    //TODO
+___
+### LinkedList Deque
+
+    //TODO
 ___ 
 ### HashMap
 
@@ -88,20 +164,49 @@ ___
             result[0] = map.get(target - nums[i]);
         }
 
-___      
-### HashSet
-     HashSet<Integer> set = new HashSet<Integer>();
+___
+### HashLinkedMap
 
+    //TODO
+___
+### HashTable
 
-    Java HashSet class is used to create a collection that uses a hash table for storage. 
-    It inherits the AbstractSet class and implements Set interface.
+    //TODO
+___
+### TreeMap
+    //TODO
+___ 
+### BFS
+    List<Double> result = new ArrayList<>();
+    Queue<TreeNode> nodes = new LinkedList<>();
 
-    The important points about Java HashSet class are:
+    nodes.add(root);
+    while(!nodes.isEmpty())
+    int n = nodes.size();
 
-    1. HashSet stores the elements by using a mechanism called hashing.
-    2. HashSet contains unique elements only.
+    if(node.left != null) nodes.offer(node.left);
+    if(node.right != null) nodes.offer(node.right);
+    
+___ 
+### DFS
+    pre-order traversal 
+        Check if the current node is empty / null.
+        Display the data part of the root (or current node).
+        Traverse the left subtree by recursively calling the pre-order function.
+        Traverse the right subtree by recursively calling the pre-order function.
 
-    UNIQUE ELEMENTS!!!!!!!!!!!!!!!!!!!!!!!
+    in-order traversal
+        Check if the current node is empty / null.
+        Traverse the left subtree by recursively calling the in-order function.
+        Display the data part of the root (or current node).
+        Traverse the right subtree by recursively calling the in-order function.
+
+    post-order traversal
+        Check if the current node is empty / null.
+        Traverse the left subtree by recursively calling the post-order function.
+        Traverse the right subtree by recursively calling the post-order function.
+        Display the data part of the root (or current node).
+
 ___ 
 ### String && Char
     String.valueOf(i)
@@ -121,37 +226,8 @@ ___
     //delete a char in a string
     String s;
     s = s.substring(0, index) + s.substring(index + 1);
-___ 
-###  ArrayList           
-    //the size can increase if collection grows or shrunk if objects are removed from the collection.
-    public static void main(String[] args) 
-                        throws IOException 
-    { 
-        int n = 5; 
-        ArrayList<Integer> arrli = new ArrayList<Integer>(n); 
- 
-        for (int i=1; i<=n; i++) 
-            arrli.add(i); // Appending the new element at the end of the list 
-  
-        System.out.println(arrli); 
-        
-        arrli.remove(3); // Remove element at index 3 
 
-        System.out.println(arrli); 
-
-        for (int i=0; i<arrli.size(); i++) 
-            System.out.print(arrli.get(i)+" "); 
-    } 
     
-    output:
-    [1, 2, 3, 4, 5]
-    [1, 2, 3, 5]
-    1 2 3 5 
-    
-___ 
-### Priority Queue
-    https://www.javatpoint.com/java-priorityqueue
-
 
 
 ___ 
