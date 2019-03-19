@@ -29,6 +29,7 @@
 - [Balls into Bins problem](#balls-into-bins-problem)
 
 <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/java-collection.jpg" width="800" />
+
 ___ 
 ###  ArrayList           
     //the size can increase if collection grows or shrunk if objects are removed from the collection.
