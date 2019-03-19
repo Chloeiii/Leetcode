@@ -10,7 +10,7 @@
 - [HashSet](#hashset)  
 - [LinkedHashSet](#linkedhashset)  
 - [TreeSet](#treeset) 
-:speak_no_evil:  
+- :speak_no_evil:  
 - [Priority Queue](#priority-queue)  
 - [Array Deque](#arraydeque)  
 - [LinkedList DeQue](#linkedlist-deque)  
@@ -28,7 +28,6 @@
 - [Sorting algorithems](#sorting-algorithems)
 - [Balls into Bins problem](#balls-into-bins-problem)
 
-![](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/java-collection.jpg)
 <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/java-collection.jpg" width="800" />
 ___ 
 ###  ArrayList           
