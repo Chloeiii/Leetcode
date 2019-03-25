@@ -134,20 +134,61 @@ ___
 ___
 ### Vector
 
-    //TODO
+	https://www.geeksforgeeks.org/java-util-vector-class-java/
+	Vector implements a dynamic array that means it can grow or shrink as required. 
+	Like an array, it contains components that can be accessed using an integer index
+	They are very similar to ArrayList but Vector is synchronised and have some legacy method 
+	which collection framework does not contain.
+	
+	Constructor:
+
+	Vector(): Creates a default vector of initial capacity is 10.
+	Vector(int size): Creates a vector whose initial capacity is specified by size.
+	Vector(int size, int incr): Creates a vector whose initial capacity is specified by size 
+		and increment is specified by incr. It specifies the number of elements to allocate 
+		each time that a vector is resized upward. (If increment is specified, Vector will 
+		expand according to it in each allocation cycle but if increment is not specified 
+		then vector’s capacity get doubled in each allocation cycle.)
+	Vector(Collection c): Creates a vector that contains the elements of collection c.
+	
+	class Vector_demo { 
+	    public static void main(String[] arg) 
+	    { 
+
+		// create default vector 
+		Vector v = new Vector(); 
+
+		v.add(1); 
+		v.add(2); 
+		v.add("geeks"); 
+		v.add("forGeeks"); 
+		v.add(3); 
+
+		System.out.println("Vector is " + v); 
+	    } 
+	}
+	
+	//Vector is: [1, 2, geeks, forGeeks, 3]
 
 ___      
 ### HashSet
    
-    // Java HashSet class is used to create a collection that uses a hash table for storage. 
-    // It inherits the AbstractSet class and implements Set interface.
+    Java HashSet class is used to create a collection that uses a hash table for storage. 
+    It inherits the AbstractSet class and implements Set interface.  
+    
+    The important points about Java HashSet class are:  
+    	1. HashSet stores the elements by using a mechanism called hashing.  
+    	2. HashSet contains unique elements only.  
+	3. Underlying data structure for HashSet is hashtable.    
+	4. Objects that you insert in HashSet are not guaranteed to be inserted in same order. Objects are inserted based on their hash code.  
+	5. NULL elements are allowed in HashSet.  
 
-    // The important points about Java HashSet class are:
-    // 1. HashSet stores the elements by using a mechanism called hashing.
-    // 2. HashSet contains unique elements only.
-
-    // UNIQUE ELEMENTS!!!!!!!!!!!!!!!!!!!!!!!
-    HashSet<Integer> set = new HashSet<Integer>();
+    Constructors:
+	HashSet h = new HashSet();  // HashSet<Integer> h = new HashSet<Integer>();  //Default initial capacity is 16 and default load factor is 0.75.
+	HashSet h = new HashSet(int initialCapacity); //default loadFactor of 0.75
+	HashSet h = new HashSet(int initialCapacity, float loadFactor);
+	HashSet h = new HashSet(Collection C);
+    
     //TODO
     
 ___
