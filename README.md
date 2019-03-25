@@ -173,15 +173,16 @@ ___
 ___      
 ### HashSet
    
+	https://www.geeksforgeeks.org/hashset-in-java/
     Java HashSet class is used to create a collection that uses a hash table for storage. 
     It inherits the AbstractSet class and implements Set interface.  
     
     The important points about Java HashSet class are:  
     	1. HashSet stores the elements by using a mechanism called hashing.  
     	2. HashSet contains unique elements only.  
-	3. Underlying data structure for HashSet is hashtable.    
-	4. Objects that you insert in HashSet are not guaranteed to be inserted in same order. Objects are inserted based on their hash code.  
-	5. NULL elements are allowed in HashSet.  
+		3. Underlying data structure for HashSet is hashtable.    
+		4. Objects that you insert in HashSet are not guaranteed to be inserted in same order. Objects are inserted based on their hash code.  
+		5. NULL elements are allowed in HashSet.  
 
     Constructors:
 	HashSet h = new HashSet();  // HashSet<Integer> h = new HashSet<Integer>();  //Default initial capacity is 16 and default load factor is 0.75.
@@ -189,8 +190,50 @@ ___
 	HashSet h = new HashSet(int initialCapacity, float loadFactor);
 	HashSet h = new HashSet(Collection C);
     
-    //TODO
+     public static void main(String[]args) 
+    { 
+        HashSet<String> h = new HashSet<String>(); 
+  
+        // Adding elements into HashSet usind add() 
+        h.add("India"); 
+        h.add("Australia"); 
+        h.add("South Africa"); 
+        h.add("India");// adding duplicate elements 
+  
+        // Displaying the HashSet 
+        System.out.println(h); 
+        System.out.println("List contains India or not:" + 
+                           h.contains("India")); 
+  
+        // Removing items from HashSet using remove() 
+        h.remove("Australia"); 
+        System.out.println("List after removing Australia:"+h); 
+  
+        // Iterating over hash set items 
+        System.out.println("Iterating over list:"); 
+        Iterator<String> i = h.iterator(); 
+        while (i.hasNext()) 
+            System.out.println(i.next()); 
+    } 
     
+    Output:
+   	[South Africa, Australia, India]
+	List contains India or not:true
+	List after removing Australia:[South Africa, India]
+	Iterating over list:
+	South Africa
+	India
+	
+	Methods:
+	boolean add(E e) //Used to add the specified element if it is not present, if it is present then return false.
+	void clear() //Used to remove all the elements from set.
+	boolean contains(Object o) //Used to return true if an element is present in set.
+	boolean remove(Object o) //Used to remove the element if it is present in set.
+	Iterator iterator() //Used to return an iterator over the element in the set.
+	boolean isEmpty() //Used to check whether the set is empty or not. Returns true for empty and false for non-empty condition for set.
+	int size() //Used to return the size of the set.
+	Object clone() //Used to create a shallow copy of the set.
+
 ___
 ### LinkedHashSet
 
