@@ -178,12 +178,12 @@ ___
     It inherits the AbstractSet class and implements Set interface.  
     
     The important points about Java HashSet class are:  
-    1. HashSet stores the elements by using a mechanism called hashing.  
+    1. HashSet is implemented using a hash table 
     2. HashSet contains unique elements only.  
-	3. Underlying data structure for HashSet is hashtable.    
-	4. Objects that you insert in HashSet are not guaranteed to be inserted in same order. Objects are inserted based on their hash code.  
-	5. NULL elements are allowed in HashSet.  
-
+	3. Elements are not ordered.    
+	4. NULL elements are allowed in HashSet.  
+	5. The add, remove, and contains method have constant time complexity O(1).
+	
     Constructors:
 	HashSet h = new HashSet();  // HashSet<Integer> h = new HashSet<Integer>();  //Default initial capacity is 16 and default load factor is 0.75.
 	HashSet h = new HashSet(int initialCapacity); //default loadFactor of 0.75
