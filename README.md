@@ -135,6 +135,7 @@ ___
 ### Vector
 
 	https://www.geeksforgeeks.org/java-util-vector-class-java/
+	
 	Vector implements a dynamic array that means it can grow or shrink as required. 
 	Like an array, it contains components that can be accessed using an integer index
 	They are very similar to ArrayList but Vector is synchronised and have some legacy method 
@@ -174,6 +175,7 @@ ___
 ### HashSet
    
 	https://www.geeksforgeeks.org/hashset-in-java/
+	
     Java HashSet class is used to create a collection that uses a hash table for storage. 
     It inherits the AbstractSet class and implements Set interface.  
     
@@ -237,7 +239,45 @@ ___
 ___
 ### LinkedHashSet
 
-    //TODO
+	https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/
+	A LinkedHashSet is an ordered version of HashSet that maintains a doubly-linked List across all elements.
+	LinkedHashSet lets us iterate through the elements in the order in which they were inserted.
+	1. Contains unique elements only like HashSet. 
+	2. Maintains insertion order.
+	
+	public static void main(String[] args)  
+	{   
+		LinkedHashSet<String> linkedset = new LinkedHashSet<String>();   
+
+		// Adding element to LinkedHashSet   
+		linkedset.add("A");   
+		linkedset.add("B");   
+		linkedset.add("C");   
+		linkedset.add("D");  
+
+		// This will not add new element as A already exists  
+		linkedset.add("A");  
+		linkedset.add("E");   
+
+		System.out.println("Size of LinkedHashSet = " + 
+					    linkedset.size());   
+		System.out.println("Original LinkedHashSet:" + linkedset);   
+		System.out.println("Removing D from LinkedHashSet: " + 
+				    linkedset.remove("D"));   
+		System.out.println("Trying to Remove Z which is not "+ 
+				    "present: " + linkedset.remove("Z"));   
+		System.out.println("Checking if A is present=" +  
+				    linkedset.contains("A")); 
+		System.out.println("Updated LinkedHashSet: " + linkedset);   
+	}   
+	
+	Output:
+	Size of LinkedHashSet=5
+	Original LinkedHashSet:[A, B, C, D, E]
+	Removing D from LinkedHashSet: true
+	Trying to Remove Z which is not present: false
+	Checking if A is present=true
+	Updated LinkedHashSet: [A, B, C, E]
 
 ___
 ### TreeSet
