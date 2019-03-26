@@ -281,9 +281,35 @@ ___
 
 ___
 ### TreeSet
+	
+	https://www.geeksforgeeks.org/treeset-in-java-with-examples/
+	
+	The ordering of the elements is maintained by a set using their natural ordering.
+	1. No duplicate values
+	2. Objects in a TreeSet are stored in a sorted and ascending order.
+	3. TreeSet does not allow to insert Heterogeneous objects. It will throw classCastException at Runtime if trying to add hetrogeneous objects.
+	4. TreeSet serves as an excellent choice for storing large amounts of sorted information which are supposed to be accessed quickly because of its faster access and retrieval time.
+	5. operations like add, remove and search take O(Log n) time. And operations like printing n elements in sorted order takes O(n) time.
+	
+	public static void main(String[] args) 
+	{ 
+	TreeSet<String> ts1 = new TreeSet<String>(); 
 
-    //TODO
+	// Elements are added using add() method 
+	ts1.add("A"); 
+	ts1.add("B"); 
+	ts1.add("C"); 
 
+	// Duplicates will not get insert 
+	ts1.add("C"); 
+
+	// Elements get stored in default natural 
+	// Sorting Order(Ascending) 
+	System.out.println(ts1); 
+	} 
+	 
+	[A, B, C]
+    
 ___ 
 ### Priority Queue
     https://www.javatpoint.com/java-priorityqueue
