@@ -283,6 +283,7 @@ ___
 ### TreeSet
 	
 	https://www.geeksforgeeks.org/treeset-in-java-with-examples/
+	https://www.javatpoint.com/java-treeset
 	
 	The ordering of the elements is maintained by a set using their natural ordering.
 	1. No duplicate values
@@ -290,6 +291,8 @@ ___
 	3. TreeSet does not allow to insert Heterogeneous objects. It will throw classCastException at Runtime if trying to add hetrogeneous objects.
 	4. TreeSet serves as an excellent choice for storing large amounts of sorted information which are supposed to be accessed quickly because of its faster access and retrieval time.
 	5. operations like add, remove and search take O(Log n) time. And operations like printing n elements in sorted order takes O(n) time.
+	6. Java TreeSet class doesn't allow null element.
+	7. Java TreeSet class is non synchronized.
 	
 	public static void main(String[] args) 
 	{ 
@@ -310,6 +313,23 @@ ___
 	 
 	[A, B, C]
     
+    	Iterate:
+	 public static void main(String args[]){  
+		//Creating and adding elements  
+		TreeSet<String> al=new TreeSet<String>();  
+		al.add("Ravi");  
+		al.add("Vijay");  
+		al.add("Ravi");  
+		al.add("Ajay");  
+		//Traversing elements  
+		Iterator<String> itr=al.iterator();  
+		while(itr.hasNext()){  
+		System.out.println(itr.next());  
+		}  
+	}
+	Ajay
+	Ravi
+	Vijay
 ___ 
 ### Priority Queue
     https://www.javatpoint.com/java-priorityqueue
