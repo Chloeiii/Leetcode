@@ -312,9 +312,9 @@ ___
 	} 
 	 
 	[A, B, C]
-    
-    	Iterate:
-	 public static void main(String args[]){  
+	
+	Iterate:
+	public static void main(String args[]){  
 		//Creating and adding elements  
 		TreeSet<String> al=new TreeSet<String>();  
 		al.add("Ravi");  
