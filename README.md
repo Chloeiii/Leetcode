@@ -560,13 +560,19 @@ Output:
 	The final array is: [984, 265, 564, 24, 14]
 ___
 ### LinkedList Deque
-
-    //TODO
+	TBD
+    
 ___ 
 ### HashMap
+[hashmap](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)
 
     A HashMap store items in "key/value" pairs, and you can access them by a key (e.g. a String). 
     (有点像python的dictionary)
+    
+    1. To access a value, must know its key
+    2. No duplicate keys, but allows duplicate values
+    3. HashMap allows null key also but only once and multiple null values.
+    4. This class makes no guarantees as to the order of the map
 
     Create HashMap Obj:
         import java.util.HashMap; // import the HashMap class
@@ -607,8 +613,45 @@ ___
 
 ___
 ### HashLinkedMap
+[linkedhashmap](https://www.geeksforgeeks.org/linkedhashmap-class-java-examples/)
+    
+    LinkedHashMap is just like HashMap with an additional feature of maintaining an order of elements inserted into it.
+Example:
 
-    //TODO
+	public static void main(String a[]) 
+	{ 
+		LinkedHashMap<String, String> lhm = new LinkedHashMap<String, String>(); 
+		lhm.put("one", "practice.geeksforgeeks.org"); 
+		lhm.put("two", "code.geeksforgeeks.org"); 
+		lhm.put("four", "quiz.geeksforgeeks.org"); 
+
+		// It prints the elements in same order  
+		// as they were inserted     
+		System.out.println(lhm); 
+
+		System.out.println("Getting value for key 'one': " 
+					       + lhm.get("one")); 
+		System.out.println("Size of the map: " + lhm.size()); 
+		System.out.println("Is map empty? " + lhm.isEmpty()); 
+		System.out.println("Contains key 'two'? "+  
+					  lhm.containsKey("two")); 
+		System.out.println("Contains value 'practice.geeks"
+		+"forgeeks.org'? "+ lhm.containsValue("practice"+ 
+		".geeksforgeeks.org")); 
+		System.out.println("delete element 'one': " +  
+				   lhm.remove("one")); 
+		System.out.println(lhm); 
+	} 
+Output:
+
+	{one=practice.geeksforgeeks.org, two=code.geeksforgeeks.org, four=quiz.geeksforgeeks.org}
+	Getting value for key 'one': practice.geeksforgeeks.org
+	Size of the map: 3
+	Is map empty? false
+	Contains key 'two'? true
+	Contains value 'practice.geeksforgeeks.org'? true
+	delete element 'one': practice.geeksforgeeks.org
+	{two=code.geeksforgeeks.org, four=quiz.geeksforgeeks.org}
 ___
 ### HashTable
 
