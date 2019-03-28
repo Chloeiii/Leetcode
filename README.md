@@ -33,6 +33,8 @@
 ___ 
 ###  ArrayList           
     //the size can increase if collection grows or shrunk if objects are removed from the collection.
+Example:
+
     public static void main(String[] args) 
                         throws IOException 
     { 
@@ -52,7 +54,8 @@ ___
             System.out.print(arrli.get(i)+" "); 
     } 
     
-    output:
+output:
+
     [1, 2, 3, 4, 5]
     [1, 2, 3, 5]
     1 2 3 5 
@@ -133,8 +136,8 @@ ___
 
 ___
 ### Vector
-
-	https://www.geeksforgeeks.org/java-util-vector-class-java/
+[vector](https://www.geeksforgeeks.org/java-util-vector-class-java/)
+	
 	
 	Vector implements a dynamic array that means it can grow or shrink as required. 
 	Like an array, it contains components that can be accessed using an integer index
@@ -151,7 +154,9 @@ ___
 		expand according to it in each allocation cycle but if increment is not specified 
 		then vector’s capacity get doubled in each allocation cycle.)
 	Vector(Collection c): Creates a vector that contains the elements of collection c.
-	
+
+Example:
+
 	class Vector_demo { 
 	    public static void main(String[] arg) 
 	    { 
@@ -168,13 +173,14 @@ ___
 		System.out.println("Vector is " + v); 
 	    } 
 	}
+
+Output:
 	
-	//Vector is: [1, 2, geeks, forGeeks, 3]
+	Vector is: [1, 2, geeks, forGeeks, 3]
 
 ___      
 ### HashSet
-   
-	https://www.geeksforgeeks.org/hashset-in-java/
+[hashset](https://www.geeksforgeeks.org/hashset-in-java/)   
 	
     Java HashSet class is used to create a collection that uses a hash table for storage. 
     It inherits the AbstractSet class and implements Set interface.  
@@ -191,7 +197,9 @@ ___
 	HashSet h = new HashSet(int initialCapacity); //default loadFactor of 0.75
 	HashSet h = new HashSet(int initialCapacity, float loadFactor);
 	HashSet h = new HashSet(Collection C);
-    
+
+Example:
+
      public static void main(String[]args) 
     { 
         HashSet<String> h = new HashSet<String>(); 
@@ -218,7 +226,8 @@ ___
             System.out.println(i.next()); 
     } 
     
-    Output:
+Output:
+
    	[South Africa, Australia, India]
 	List contains India or not:true
 	List after removing Australia:[South Africa, India]
@@ -226,7 +235,8 @@ ___
 	South Africa
 	India
 	
-	Methods:
+Methods:
+
 	boolean add(E e) //Used to add the specified element if it is not present, if it is present then return false.
 	void clear() //Used to remove all the elements from set.
 	boolean contains(Object o) //Used to return true if an element is present in set.
@@ -238,13 +248,14 @@ ___
 
 ___
 ### LinkedHashSet
-
-	https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/
+[linkedhashset](https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/)
+	
 	A LinkedHashSet is an ordered version of HashSet that maintains a doubly-linked List across all elements.
 	LinkedHashSet lets us iterate through the elements in the order in which they were inserted.
 	1. Contains unique elements only like HashSet. 
 	2. Maintains insertion order.
-	
+Example:
+
 	public static void main(String[] args)  
 	{   
 		LinkedHashSet<String> linkedset = new LinkedHashSet<String>();   
@@ -271,7 +282,8 @@ ___
 		System.out.println("Updated LinkedHashSet: " + linkedset);   
 	}   
 	
-	Output:
+Output:
+
 	Size of LinkedHashSet=5
 	Original LinkedHashSet:[A, B, C, D, E]
 	Removing D from LinkedHashSet: true
@@ -281,9 +293,7 @@ ___
 
 ___
 ### TreeSet
-	
-	https://www.geeksforgeeks.org/treeset-in-java-with-examples/
-	https://www.javatpoint.com/java-treeset
+[treeset](https://www.geeksforgeeks.org/treeset-in-java-with-examples/)	
 	
 	The ordering of the elements is maintained by a set using their natural ordering.
 	1. No duplicate values
@@ -293,7 +303,8 @@ ___
 	5. operations like add, remove and search take O(Log n) time. And operations like printing n elements in sorted order takes O(n) time.
 	6. Java TreeSet class doesn't allow null element.
 	7. Java TreeSet class is non synchronized.
-	
+Example:
+
 	public static void main(String[] args) 
 	{ 
 	TreeSet<String> ts1 = new TreeSet<String>(); 
@@ -310,10 +321,12 @@ ___
 	// Sorting Order(Ascending) 
 	System.out.println(ts1); 
 	} 
-	 
+Output:
+
 	[A, B, C]
 	
-	Iterate:
+Iterate:
+
 	public static void main(String args[]){  
 		//Creating and adding elements  
 		TreeSet<String> al=new TreeSet<String>();  
@@ -327,12 +340,15 @@ ___
 		System.out.println(itr.next());  
 		}  
 	}
+Output:
+
 	Ajay
 	Ravi
 	Vijay
 ___ 
 ### Priority Queue
-	https://www.javatpoint.com/java-priorityqueue
+[priorityqueue](https://www.javatpoint.com/java-priorityqueue)
+	
 	A PriorityQueue is used when the objects are supposed to be processed based on the priority. 
 	It is known that a queue follows First-In-First-Out algorithm, but sometimes the elements of the queue are 
 	needed to be processed according to the priority, that’s when the PriorityQueue comes into play.
@@ -341,7 +357,8 @@ ___
 	2. We can’t create PriorityQueue of Objects that are non-comparable
 	3. PriorityQueue are unbound queues.
 	
-	
+Example:
+
 	public static void main(String args[]) 
     	{ 
         // Creating empty priority queue 
@@ -394,7 +411,8 @@ ___
           System.out.println ( "Value: " + arr[i].toString()) ; 
 	}
 	
-	Output:
+Output:
+
 	Head value using peek function:C
 	The queue elements:
 	C
@@ -415,8 +433,131 @@ ___
 
 ___
 ### ArrayDeque
+[arraydeque](https://www.geeksforgeeks.org/arraydeque-in-java/)
+	
+	ArrayDeque in Java provides a way to apply resizable-array in addition to the implementation of the Deque interface.
+	It is also known as Array Double Ended Queue or Array Deck. 
+	This is a special kind of array that grows and allows users to add or remove an element from both the sides of the queue.
+	
+	1. no capacity restrictions and they grow as necessary to support usage.
+	2. Null elements are prohibited in the ArrayDeque.
+	3. ArrayDeque class is likely to be faster than Stack when used as a stack.
+	4. ArrayDeque class is likely to be faster than LinkedList when used as a queue.
+Example:
 
-    //TODO
+   	public static void main(String[] args) 
+    	{ 
+		// Intializing an deque 
+		Deque<Integer> de_que = new ArrayDeque<Integer>(10); 
+
+		// add() method to insert 
+		de_que.add(10); 
+		de_que.add(20); 
+		de_que.add(30); 
+		de_que.add(40); 
+		de_que.add(50); 
+		for (Integer element : de_que) 
+		{ 
+		    System.out.println("Element : " + element); 
+		} 
+
+		System.out.println("Using clear() "); 
+
+		// clear() method 
+		de_que.clear(); 
+
+		// addFirst() method to insert at start 
+		de_que.addFirst(564); 
+		de_que.addFirst(291); 
+
+		// addLast() method to insert at end 
+		de_que.addLast(24); 
+		de_que.addLast(14); 
+
+		System.out.println("Above elements are removed now"); 
+
+		// Iterator() : 
+		System.out.println("Elements of deque using Iterator :"); 
+		for(Iterator itr = de_que.iterator(); itr.hasNext();) 
+		{ 
+		    System.out.println(itr.next()); 
+		} 
+
+		// descendingIterator() : to reverse the deque order 
+		System.out.println("Elements of deque in reverse order :"); 
+		for(Iterator dItr = de_que.descendingIterator();  
+						       dItr.hasNext();) 
+		{ 
+		    System.out.println(dItr.next()); 
+		} 
+
+		// element() method : to get Head element 
+		System.out.println("\nHead Element using element(): " + 
+						     de_que.element()); 
+
+		// getFirst() method : to get Head element 
+		System.out.println("Head Element using getFirst(): " +  
+						       de_que.getFirst()); 
+
+		// getLast() method : to get last element 
+		System.out.println("Last Element using getLast(): " +  
+							de_que.getLast()); 
+
+		// toArray() method : 
+		Object[] arr = de_que.toArray(); 
+		System.out.println("\nArray Size : " + arr.length); 
+
+		System.out.print("Array elements : "); 
+		for(int i=0; i<arr.length ; i++) 
+		    System.out.print(" " + arr[i]); 
+
+		// peek() method : to get head 
+		System.out.println("\nHead element : " + de_que.peek()); 
+
+		// poll() method : to get head 
+		System.out.println("Head element poll : " + de_que.poll()); 
+
+		// push() method : 
+		de_que.push(265); 
+		de_que.push(984); 
+		de_que.push(2365); 
+
+		// remove() method : to get head 
+		System.out.println("Head element remove : " + de_que.remove()); 
+
+		System.out.println("The final array is: "+de_que); 
+    	} 	
+	
+Output:
+
+	Element : 10
+	Element : 20
+	Element : 30
+	Element : 40
+	Element : 50
+	Using clear() 
+	Above elements are removed now
+	Elements of deque using Iterator :
+	291
+	564
+	24
+	14
+	Elements of deque in reverse order :
+	14
+	24
+	564
+	291
+
+	Head Element using element(): 291
+	Head Element using getFirst(): 291
+	Last Element using getLast(): 14
+
+	Array Size : 4
+	Array elements :  291 564 24 14
+	Head element : 291
+	Head element poll : 291
+	Head element remove : 2365
+	The final array is: [984, 265, 564, 24, 14]
 ___
 ### LinkedList Deque
 
