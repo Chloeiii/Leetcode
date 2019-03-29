@@ -654,11 +654,81 @@ Output:
 	{two=code.geeksforgeeks.org, four=quiz.geeksforgeeks.org}
 ___
 ### HashTable
+[hashtable](https://www.geeksforgeeks.org/hashtable-in-java/)
 
-    //TODO
+	1. key or value cannot be null
+	2. it is similar to HashMap, but is synchronised.
+Example:
+
+    public static void main(String[] arg) 
+    { 
+        // creating a hash table 
+        Hashtable<Integer, String> h = 
+                      new Hashtable<Integer, String>(); 
+  
+        Hashtable<Integer, String> h1 = 
+                      new Hashtable<Integer, String>(); 
+  
+        h.put(3, "Geeks"); 
+        h.put(2, "forGeeks"); 
+        h.put(1, "isBest"); 
+  
+        // create a clone or shallow copy of hash table h 
+        h1 = (Hashtable<Integer, String>)h.clone(); 
+  
+        // checking clone h1 
+        System.out.println("values in clone: " + h1); 
+  
+        // clear hash table h 
+        h.clear(); 
+  
+        // checking hash table h 
+        System.out.println("after clearing: " + h); 
+    } 
+Output:
+
+	values in clone: {3=Geeks, 2=forGeeks, 1=isBest}
+	after clearing: {}
 ___
 ### TreeMap
-    //TODO
+[treemap](https://www.geeksforgeeks.org/treemap-in-java/)
+
+	TreeMap is Red-Black tree based NavigableMap implementation. 
+	It is sorted according to the natural ordering of its keys.
+	TreeMap class implements Map interface similar to HashMap class. 
+	The main difference between them is that HashMap is an unordered collection while 
+		TreeMap is sorted in the ascending order of its keys.
+	
+	1. does not allow null keys (like Map)
+Example:
+
+	public static void main(String args[]) {
+		/* This is how to declare TreeMap */
+		TreeMap<Integer, String> tmap = new TreeMap<Integer, String>();
+
+		/*Adding elements to TreeMap*/
+		tmap.put(1, "Data1");
+		tmap.put(23, "Data2");
+		tmap.put(70, "Data3");
+		tmap.put(4, "Data4");
+		tmap.put(2, "Data5");
+
+		/* Display content using Iterator*/
+		Set set = tmap.entrySet();
+		Iterator iterator = set.iterator();
+		while(iterator.hasNext()) {
+		Map.Entry mentry = (Map.Entry)iterator.next();
+		System.out.print("key is: "+ mentry.getKey() + " & Value is: ");
+		System.out.println(mentry.getValue());
+		}
+	}
+Output:
+
+	key is: 1 & Value is: Data1
+	key is: 2 & Value is: Data5
+	key is: 4 & Value is: Data4
+	key is: 23 & Value is: Data2
+	key is: 70 & Value is: Data3
 ___ 
 ### BFS
     List<Double> result = new ArrayList<>();
