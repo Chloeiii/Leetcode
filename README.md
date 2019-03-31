@@ -19,13 +19,10 @@
 - [HashLinkedMap](#hashlinkedmap)  
 - [HashTable](#hashtable)  
 - [TreeMap](#treemap)  
-- :angel:  
-- [BFS](#bfs)  
-- [DFS](#dfs)  
+- :angel:   
 - [String and Char](#string--char)  
 - [Basic Operators](#basic-operators)  
 - [Math Operators](#math-operators)  
-- [Sorting algorithems](#sorting-algorithems)
 - [Balls into Bins problem](#balls-into-bins-problem)
 
 <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/java-collection.jpg" width="800" />
@@ -730,38 +727,6 @@ Output:
 	key is: 23 & Value is: Data2
 	key is: 70 & Value is: Data3
 ___ 
-### BFS
-    List<Double> result = new ArrayList<>();
-    Queue<TreeNode> nodes = new LinkedList<>();
-
-    nodes.add(root);
-    while(!nodes.isEmpty())
-    int n = nodes.size();
-
-    if(node.left != null) nodes.offer(node.left);
-    if(node.right != null) nodes.offer(node.right);
-    
-___ 
-### DFS
-    pre-order traversal 
-        Check if the current node is empty / null.
-        Display the data part of the root (or current node).
-        Traverse the left subtree by recursively calling the pre-order function.
-        Traverse the right subtree by recursively calling the pre-order function.
-
-    in-order traversal
-        Check if the current node is empty / null.
-        Traverse the left subtree by recursively calling the in-order function.
-        Display the data part of the root (or current node).
-        Traverse the right subtree by recursively calling the in-order function.
-
-    post-order traversal
-        Check if the current node is empty / null.
-        Traverse the left subtree by recursively calling the post-order function.
-        Traverse the right subtree by recursively calling the post-order function.
-        Display the data part of the root (or current node).
-
-___ 
 ### String && Char
     String.valueOf(i)
     String[] keyboard = {"QWERTYUIOP","ASDFGHJKL","ZXCVBNM"};
@@ -780,10 +745,6 @@ ___
     //delete a char in a string
     String s;
     s = s.substring(0, index) + s.substring(index + 1);
-
-    
-
-
 ___ 
 ### basic operators
     https://www.tutorialspoint.com/java/java_basic_operators.htm
@@ -842,20 +803,6 @@ ___
     int max = Math.max(10, 20);
     double random = Math.random();
 ___ 
-### Sorting algorithems
-
-#### Arrays.sort in java
-    https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
-    e.g.
-        import java.util.Arrays; 
-        int[] nums
-        Arrays.sort(nums);
-#### Sorting algorithms
-    https://www.geeksforgeeks.org/sorting-algorithms/#algo
-
-#### Sorting algorithms time complexity
-    http://bigocheatsheet.com/
-___ 
 ### Balls into Bins problem
 
         Give m balls and n bins. Find out how many ways to assign balls to bins. Notice the buckets has no order. Like (1,2,3) and (3,2,1) are considered the same. 
@@ -872,7 +819,4 @@ ___
                     return assignBalls(m, n - 1) + assignBalls(m - n, n);
                 }
             }
-___ 
-## TODO
-### Binary Search Tree
-### olymorphism, inheritance, encapsulation, etc
+
