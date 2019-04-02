@@ -1,27 +1,28 @@
 # Java notes :relaxed:
 
 ### Table of Contents
-- :see_no_evil:  
+- :see_no_evil:  List < E >
 - [ArrayList](#arraylist)  
 - [LinkedList](#linkedlist)
 - [Stack](#stack)
 - [Vector](#vector)
-- :hear_no_evil:  
+- :hear_no_evil:  Set < E >
 - [HashSet](#hashset)  
 - [LinkedHashSet](#linkedhashset)  
 - [TreeSet](#treeset) 
-- :speak_no_evil:  
+- :speak_no_evil: Queue < E >
 - [Priority Queue](#priority-queue)  
 - [Array Deque](#arraydeque)  
 - [LinkedList DeQue](#linkedlist-deque)  
-- :baby:  
+- :baby:  Map < K, V >
 - [HashMap](#hashmap)  
 - [HashLinkedMap](#hashlinkedmap)  
 - [HashTable](#hashtable)  
 - [TreeMap](#treemap)  
-- :person_with_blond_hair:
+- :person_with_blond_hair:  Trees
 - [Binary Search Tree](#binary-search-tree)
-- :angel:   
+- [Min Heap](#min-heap)
+- :angel: Other
 - [String and Char](#string--char)  
 - [Basic Operators](#basic-operators)  
 - [Math Operators](#math-operators)  
@@ -836,8 +837,21 @@ Node Class and Constructors:
 	} 
 
 
+___ 
+### Min Heap
+A Min-Heap is a complete binary tree in which the value in each internal node is greater than or equal to the values in the children of that node.
 
+	Mapping the elements of a heap into an array is trivial: 
+		if a node is stored a index k, 
+		then its left child is stored at index 2k + 1
+		its right child at index 2k + 2.
+Ex:
 
+		    5                      13
+		 /      \               /       \  
+	       10        15           16         31 
+	      /                      /  \        /  \
+	    30                     41    51    100   41
 
 
 ___ 
