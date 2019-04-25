@@ -1,4 +1,4 @@
-# Java notes :relaxed:
+# Data Structure Review (in Java) :relaxed:
 
 ### Table of Contents
 - :see_no_evil:  List < E >
