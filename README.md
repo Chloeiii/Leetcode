@@ -6,7 +6,7 @@
 - [LinkedList](#linkedlist)
 - [Stack](#stack)
 - [Vector](#vector)
-- :hear_no_evil:  Set < E >
+- :hear_no_evil:  Set < E > (NO duplicate values, Objects unordered)
 - [HashSet](#hashset)  
 - [LinkedHashSet](#linkedhashset)  
 - [TreeSet](#treeset) 
