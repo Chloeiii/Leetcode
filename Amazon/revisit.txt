@@ -2,3 +2,4 @@ Arrays and Strings:
   Longest Substring Without Repeating Characters (accepted but need to improve the performance) - medium
   String to Integer atoi (need to check out other solution) - medium
   container-with-most-water (decision making was wrong) - medium
+  3Sum (need to improve the performance) - medium
