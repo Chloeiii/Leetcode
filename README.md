@@ -19,7 +19,7 @@
 - [HashLinkedMap](#hashlinkedmap)  
 - [HashTable](#hashtable)  
 - [TreeMap](#treemap)  
-- :person_with_blond_hair:  Trees
+- :clown_face: Trees
 - [Binary Search Tree](#binary-search-tree)
 - [Min Heap](#min-heap)
 - :angel: Other
