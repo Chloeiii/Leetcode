@@ -4,3 +4,6 @@ Arrays and Strings:
   container-with-most-water (decision making was wrong) - medium
   3Sum (need to improve the performance) - medium
   Reverse Nodes in k-Group (need to improve the performance) - Hard
+  
+Linked Lists:
+  Copy list with Random Pointer (recursive traversal) -Medium
