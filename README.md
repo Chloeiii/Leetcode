@@ -21,7 +21,9 @@
 - [TreeMap](#treemap)  
 - :clown_face: Trees
 - [Binary Search Tree](#binary-search-tree)
+- [Heap](#heap)
 - [Min Heap](#min-heap)
+- [Max Heap](#max-heap)
 - :angel: Other
 - [String and Char](#string--char)  
 - [Basic Operators](#basic-operators)  
@@ -837,15 +839,35 @@ Node Class and Constructors:
 	} 
 
 
+
+### Heap
+What is a Heap?
+A heap is a binary tree-based data structure that satisfies the heap property, which is a specialized order property that helps maintain efficient access to the root element.
+
+There are two types of heaps:
+
+	Min-Heap
+	Max-Heap
+
 ___ 
 ### Min Heap
-A Min-Heap is a complete binary tree in which the value in each internal node is greater than or equal to the values in the children of that node.
+In a min-heap, the root node has the smallest value in the entire tree. This means that every parent node is less than or equal to its children.
+
+Properties:
+	
+	- The smallest element is at the root.
+	- The tree is complete (every level of the tree is filled from left to right).
+
+Operations:
+
+	Insert: Insert a new element at the bottom and then "bubble up" to maintain the heap property.
+	Extract Min: Remove the root element (smallest) and replace it with the last element, then "bubble down" to maintain the heap property.
 
 	Mapping the elements of a heap into an array is trivial: 
 		if a node is stored a index k, 
 		then its left child is stored at index 2k + 1
 		its right child at index 2k + 2.
-Ex:
+e.g.
 
 		    5                      13
 		 /      \               /       \  
@@ -853,7 +875,27 @@ Ex:
 	      /                      /  \        /  \
 	    30                     41    51    100   41
 
+___ 
+### Max Heap
 
+In a max-heap, the root node has the largest value in the entire tree. This means that every parent node is greater than or equal to its children.
+
+Properties:
+
+	- The largest element is at the root.
+	- The tree is complete (every level of the tree is filled from left to right).
+
+ e.g.
+
+	         9
+	       /   \
+	      7     5
+	     / \
+	    6   3
+Operations:
+
+	Insert: Insert a new element at the bottom and then "bubble up" to maintain the heap property.
+	Extract Max: Remove the root element (largest) and replace it with the last element, then "bubble down" to maintain the heap property.
 ___ 
 ### String && Char
     String.valueOf(i)
