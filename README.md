@@ -846,8 +846,8 @@ A heap is a binary tree-based data structure that satisfies the heap property, w
 
 There are two types of heaps:
 
-	Min-Heap
-	Max-Heap
+	Min-Heap (great for priority queues)
+	Max-Heap (great for heapsort)
 
 ___ 
 ### Min Heap
