@@ -864,9 +864,11 @@ Operations:
 	Extract Min: Remove the root element (smallest) and replace it with the last element, then "bubble down" to maintain the heap property.
 
 	Mapping the elements of a heap into an array is trivial: 
-		if a node is stored a index k, 
-		then its left child is stored at index 2k + 1
-		its right child at index 2k + 2.
+		Current Node	arr[i]
+		Parent Node	arr[(i-1)/2]
+		Left Child	arr[(2*i) + 1]
+		Right Child	arr[(2*i )+ 2]
+  		The root of the whole tree is at arr[0].
 e.g.
 
 		    5                      13
