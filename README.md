@@ -856,7 +856,7 @@ In a min-heap, the root node has the smallest value in the entire tree. This mea
 Properties:
 	
 	- The smallest element is at the root.
-	- The tree is complete (every level of the tree is filled from left to right).
+	- The tree is complete (1. levels filled except the lowest; 2. lowest level filled to a certain point starting from the left).
 
 Operations:
 
